@@ -7,7 +7,7 @@
     tools:context=".activities.MainActivity">
 
     <TextView
-        android:id="@+id/typeTextToPrintTextView"
+        android:id="@+id/type_text_to_print_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -25,7 +25,7 @@
         android:textColor="@color/purple_700"/>
 
     <EditText
-        android:id="@+id/typeTextToPrintEditText"
+        android:id="@+id/type_text_to_print_edit_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
@@ -36,13 +36,13 @@
         android:gravity="top"
         android:padding="12dp"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/printTextButton"
-        app:layout_constraintEnd_toEndOf="@+id/typeTextToPrintTextView"
-        app:layout_constraintStart_toStartOf="@+id/typeTextToPrintTextView"
-        app:layout_constraintTop_toBottomOf="@+id/typeTextToPrintTextView" />
+        app:layout_constraintBottom_toTopOf="@+id/print_text_button"
+        app:layout_constraintEnd_toEndOf="@+id/type_text_to_print_text_view"
+        app:layout_constraintStart_toStartOf="@+id/type_text_to_print_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/type_text_to_print_text_view" />
 
     <Button
-        android:id="@+id/printTextButton"
+        android:id="@+id/print_text_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -51,9 +51,20 @@
         android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/typeTextToPrintTextView"
-        app:layout_constraintStart_toStartOf="@+id/typeTextToPrintTextView"
-        app:layout_constraintTop_toBottomOf="@+id/typeTextToPrintTextView"
+        app:layout_constraintEnd_toEndOf="@+id/type_text_to_print_text_view"
+        app:layout_constraintStart_toStartOf="@+id/type_text_to_print_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/type_text_to_print_text_view"
         app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/element_progress_bar"
+        layout="@layout/element_progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
